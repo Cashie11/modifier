@@ -46,7 +46,7 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="/" class="active">Home</a></li>
-          <li><a href="index.html#about" class="active">About</a></li>
+          <li><a href="#contact">Contact</a></li>
           <li><a href="{% url 'retrieve_data' %}" class="active">View Modified</a></li>
         </ul>
 
@@ -80,6 +80,21 @@
               <!-- <input type="submit" class="btn btn-primary" value="Modify"> --> <br><br>
               <button type="submit" class="btn btn-primary" value="Modify">save</button>
             </form>
+
+            <!-- <br>
+            <br>
+
+            <form action="" style="padding: 20px;">
+              <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+              <br>
+              <center>
+                <button style="padding: 5px 35px; background: blue; color: #fff; font-size: 20px; border-radius: 5px;">save note</button>
+              </center>
+            </form> -->
+
+
+
+
             {% if code %}
             <p style="color: #000; padding: 10px; border: 2px solid #000; background: #fff">Your code is: {{ code }}</p>
             {% endif %}
